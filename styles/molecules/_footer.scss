@@ -3,6 +3,10 @@
   margin-bottom: 0;
   background-color: $footer-bg-color;
   color: $footer-txt-color;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .footer-widgets h3 {
@@ -19,6 +23,10 @@
 .site-footer {
   background-color: $footer-bg-color;
   border-top: none;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .site-footer p,
@@ -28,4 +36,43 @@
 .site-footer .genesis-nav-menu a:active,
 .genesis-nav-menu .current-menu-item > a {
   color: $footer-txt-color;
+}
+
+.footer-widgets-3 {
+  padding: 2.5rem 6.5rem 0;
+
+  @media only screen and (min-width: 960px) {
+    padding: 2rem 7.75rem 0 4.5rem;
+  }
+}
+
+// Footer wpcf7
+
+.footer-widgets {
+  .wpcf7 p {
+    margin: 0;
+  }
+
+  .wpcf7 input {
+    padding: 10px 15px;
+    height: 40px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .wpcf7 .wpcf7-textarea {
+    padding: 10px 15px;
+    // height: 40px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #333;
+    font-size: 16px;
+  }
+
+  .wpcf7-submit {
+    margin-top: 15px;
+  }
 }

@@ -1,0 +1,10 @@
+// If using Google recaptcha 3, to hide the recpatcha badge, add the disclaimer to the form and hide using:
+// URL: https://developers.google.com/recaptcha/docs/faq
+
+// This site is protected by reCAPTCHA and the Google
+//     <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+//     <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+
+// .grecaptcha-badge {
+//     visibility: hidden;
+//   }

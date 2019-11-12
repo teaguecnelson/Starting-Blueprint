@@ -81,6 +81,7 @@ Text Domain: genesis-sample
 /* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css
 ---------------------------------------------------------------------------- */
 /* stylelint-disable */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%; }
@@ -1559,12 +1560,8 @@ p.entry-meta {
   ul {
     page-break-before: avoid; } }
 
-@font-face {
-  font-family: "arcon";
-  src: url("https://www.sixpeakcapital.com/wp-content/themes/genesis-sample/fonts/arcon-regular.otf");
-  src: url("https://www.sixpeakcapital.com/wp-content/themes/genesis-sample/fonts/arcon-regular-webfont.woff2") format("woff2"), url("https://www.sixpeakcapital.com/wp-content/themes/genesis-sample/fonts/arcon-regular-webfont.woff") format("woff"), url("https://www.sixpeakcapital.com/wp-content/themes/genesis-sample/fonts/arcon-regular-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
+.neutral-bg {
+  background-color: #eae6dd; }
 
 @media only screen and (min-width: 960px) {
   .sidebar {
@@ -1575,6 +1572,12 @@ p.entry-meta {
 .page {
   margin-bottom: 0; }
 
+a:active,
+a:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none; }
+
 /** atoms */
 p,
 h1,
@@ -1584,7 +1587,7 @@ h4,
 h5,
 h6,
 ul {
-  font-family: arcon;
+  font-family: "Source Sans Pro", sans-serif;
   color: #333333; }
 
 a {
@@ -1605,11 +1608,18 @@ a {
 .genesis-nav-menu .current-menu-item > a {
   color: #333333; }
 
+.site-header .genesis-nav-menu li a {
+  color: #333333; }
+  .site-header .genesis-nav-menu li a:hover, .site-header .genesis-nav-menu li a:active {
+    color: #333333; }
+
 .footer-widgets {
   padding: 30px 0;
   margin-bottom: 0;
   background-color: #3b3b3a;
   color: #868686; }
+  .footer-widgets a {
+    text-decoration: none; }
 
 .footer-widgets h3 {
   color: #fff; }
@@ -1623,6 +1633,8 @@ a {
 .site-footer {
   background-color: #3b3b3a;
   border-top: none; }
+  .site-footer a {
+    text-decoration: none; }
 
 .site-footer p,
 .site-footer a,
@@ -1631,6 +1643,34 @@ a {
 .site-footer .genesis-nav-menu a:active,
 .genesis-nav-menu .current-menu-item > a {
   color: #868686; }
+
+.footer-widgets-3 {
+  padding: 2.5rem 6.5rem 0; }
+  @media only screen and (min-width: 960px) {
+    .footer-widgets-3 {
+      padding: 2rem 7.75rem 0 4.5rem; } }
+
+.footer-widgets .wpcf7 p {
+  margin: 0; }
+
+.footer-widgets .wpcf7 input {
+  padding: 10px 15px;
+  height: 40px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 10px; }
+
+.footer-widgets .wpcf7 .wpcf7-textarea {
+  padding: 10px 15px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #333;
+  font-size: 16px; }
+
+.footer-widgets .wpcf7-submit {
+  margin-top: 15px; }
 
 .jumbo {
   height: 75vh;
@@ -1655,13 +1695,6 @@ a {
     font-weight: bold;
     width: 60%; } }
 
-.full-width-inner {
-  margin: 0 auto;
-  padding: 0 30px; }
-  @media only screen and (min-width: 960px) {
-    .full-width-inner {
-      width: 65%; } }
-
 /* Blogger2wp.com - adjust anchor landing for fixed header */
 .anchor-wrapper a {
   position: absolute;
@@ -1674,5 +1707,7 @@ a {
 .no-margin {
   margin: 0; }
 
+/** 2 Column Styling for wpcf7 */
 /** Organisms */
 /** Pages */
+/** Ideas to Improve Template */

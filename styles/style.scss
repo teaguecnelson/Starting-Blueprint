@@ -32,7 +32,22 @@ Text Domain: genesis-sample
 @import "molecules/jumbo_cover";
 @import "molecules/full_width_section";
 @import "molecules/anchors_wraper_deeplink";
+@import "molecules/recaptcha";
+@import "molecules/wpcf7";
 
 /** Organisms */
 
 /** Pages */
+@import "pages/home";
+@import "pages/blog";
+@import "pages/blog_single";
+@import "pages/wp_customizer_tab";
+
+/** Ideas to Improve Template */
+// 1. remove full width section molecule?
+// 2. Molecule on adjusting alignwide width?
+// 3. Using custom blocks for some things like jumbo
+// 4. Breakpoint as a variable
+
+// 5. Tabbed Content?
+// 6. Custom Designed Blog Template!
